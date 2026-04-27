@@ -91,11 +91,11 @@ function Descargar-Oracle {
     $var = Read-Host "Ingrese opción"
     
     if ($var -eq '1') {
-        $url = "https://github.com/FacuMinatto/Oficina/releases/download/Archivos/ORACLE.9.rar"
+        $url = "https://github.com/FacuMinatto/Utiles-Oficina/releases/download/Archivos/ORACLE.9.rar"
         $archivo = "Oracle 9.rar"
     }
     elseif ($var -eq '2') {
-        $url = "https://github.com/FacuMinatto/Oficina/releases/download/Archivos/ORACLE.11.rar"
+        $url = "https://github.com/FacuMinatto/Utiles-Oficina/releases/download/Archivos/ORACLE.11.rar"
         $archivo = "Oracle 11.rar"
     }
     else {
@@ -122,7 +122,7 @@ function Descargar-Oracle {
 
 function Descargar-PDF24 {
     Clear-Host
-    $url = "https://github.com/FacuMinatto/Oficina/releases/download/Archivos/pdf24-creator-11.0.1.msi"
+    $url = "https://github.com/FacuMinatto/Utiles-Oficina/releases/download/Archivos/pdf24-creator-11.0.1.msi"
     $archivo = "Pdf24 - 11.0.1.msi"
     
     # Creamos la ruta exacta apuntando a la carpeta Descargas del usuario actual
