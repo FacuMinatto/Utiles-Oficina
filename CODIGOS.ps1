@@ -63,9 +63,12 @@ function Limpiar-Impresora {
 
 function Reparar-Disco {
     Clear-Host
+    
     Repair-WindowsImage -Online -CheckHealth
     
-    if ((Repair-WindowsImage -Online -ScanHealth).ImageHealthState -eq 'Repairable') { 
+    Repair-WindowsImage -Online -ScanHealth -OutVariable scan
+
+    if ($scan.ImageHealthState -eq 'Repairable') { 
         Repair-WindowsImage -Online -RestoreHealth
     }
     
