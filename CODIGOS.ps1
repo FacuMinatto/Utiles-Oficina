@@ -70,6 +70,8 @@ function Reparar-Disco {
     }
     
     sfc /scannow
+    lodctr /r
+    winmgmt /resyncperf
     Esperar-Enter
 }
 
